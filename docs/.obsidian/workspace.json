@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0be01c75c4af09c1",
+        "id": "c002a5f38af97a8b",
         "type": "tabs",
         "children": [
           {
-            "id": "7213d4bdd9d8a5c3",
+            "id": "b56e507f6990002e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fe/module/jsx/Rollup-jsx-pragma.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Rollup-jsx-pragma"
-            }
-          },
-          {
-            "id": "8b6abefe79c4fdb0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,10 +163,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8b6abefe79c4fdb0",
+  "active": "b56e507f6990002e",
   "lastOpenFiles": [
-    "fe/module/jsx/Rollup+Babel vs Gulp+TypeScript.md",
     "fe/module/jsx/Rollup-jsx-pragma.md",
+    "fe/module/jsx/Rollup+Babel vs Gulp+TypeScript.md",
     "fe/module/jsx/index.md",
     "fe/micro-fe/qiankun/qiankun 实现隔离原理.md",
     "fe/module/jsx",
