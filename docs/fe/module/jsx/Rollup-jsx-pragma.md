@@ -1,6 +1,9 @@
-# Q:我在rollup打包时候可以添加配置,  那么在当前配置文件想添加想通 的配置“ pragma: 'jsx',”该如何做
+# pragma: jsx 如何理解
+
+## Q:我在rollup打包时候可以添加配置, 那么在当前配置文件想添加想通 的配置“ pragma: 'jsx',”该如何做
 
 我在rollup打包时候可以添加配置，
+
 ```
 [
       '@babel/plugin-transform-react-jsx',
@@ -11,13 +14,9 @@
     ]
 ```
 
-那么在当前配置文件想添加想通 的配置“  pragma: 'jsx',”该如何做
+那么在当前配置文件想添加想通 的配置“ pragma: 'jsx',”该如何做
 
-
-## A: 
-
-
-在你当前的 Gulp + TypeScript 配置中，要实现与 Rollup 中 Babel 插件相同的 `pragma: 'jsx'` 配置（即指定 JSX 转换的函数名），需要通过 TypeScript 编译器的配置来实现，因为你这里使用的是 TypeScript 直接处理 JSX，而非 Babel。
+## A: 在你当前的 Gulp + TypeScript 配置中，要实现与 Rollup 中 Babel 插件相同的 `pragma: 'jsx'` 配置（即指定 JSX 转换的函数名），需要通过 TypeScript 编译器的配置来实现，因为你这里使用的是 TypeScript 直接处理 JSX，而非 Babel。
 
 具体做法是在 TypeScript 编译选项中添加 `jsxFactory` 和 `jsxFragmentFactory` 配置，对应 Babel 的 `pragma` 和 `pragmaFrag`。
 

@@ -1,50 +1,70 @@
 [
-  "/cesium/readme.md",
+  "/cesium/index.md",
   {
-    "text": "GIS",
+    "path": "/cesium/advanced",
+    "text": "advanced",
     "children": [
-      {
-        "text": "文件格式",
-        "children": [
-          "/cesium/gis/file-format/summary/index.md",
-          "/cesium/gis/file-format/geojson/index.md"
-        ]
-      },
-      {
-        "text": "日期",
-        "children": ["/cesium/gis/date-format/Julian-Day.md"]
-      },
-      {
-        "path": "/cesium/gis/service",
-        "text": "/cesium/gis/service",
-        "children": ["/cesium/gis/service/index.md"]
-      },
-      {
-        "path": "/cesium/gis/terminology",
-        "text": "/cesium/gis/terminology",
-        "children": ["/cesium/gis/terminology/Cartesian.md"]
-      }
+      "/cesium/advanced/readme.md"
     ]
   },
   {
-    "text": "基础",
-    "children": ["/cesium/basic/what.md"]
-  },
-  {
-    "text": "简单用例",
-    "children": ["/cesium/case/init.md"]
-  },
-  {
-    "text": "高级用法",
+    "path": "/cesium/basic",
+    "text": "basic",
     "children": [
-      "/cesium/advanced/readme.md",
+      "/cesium/basic/what.md"
+    ]
+  },
+  {
+    "path": "/cesium/case",
+    "text": "case",
+    "children": [
+      "/cesium/case/init.md"
+    ]
+  },
+  {
+    "path": "/cesium/gis",
+    "text": "Gis",
+    "children": [
       {
-        "text": "默认主题",
-        "link": "https://ecosystem.vuejs.press/themes/default/"
+        "path": "/cesium/gis/date-format",
+        "text": "date-format",
+        "children": [
+          "/cesium/gis/date-format/Julian-Day.md"
+        ]
       },
       {
-        "text": "插件",
-        "link": "https://ecosystem.vuejs.press/plugins/"
+        "path": "/cesium/gis/file-format",
+        "text": "file-format",
+        "children": [
+          {
+            "path": "/cesium/gis/file-format/geojson",
+            "text": "geojson",
+            "children": [
+              "/cesium/gis/file-format/geojson/index.md"
+            ]
+          },
+          {
+            "path": "/cesium/gis/file-format/summary",
+            "text": "summary",
+            "children": [
+              "/cesium/gis/file-format/summary/index.md"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/cesium/gis/service",
+        "text": "service",
+        "children": [
+          "/cesium/gis/service/index.md"
+        ]
+      },
+      {
+        "path": "/cesium/gis/terminology",
+        "text": "terminology",
+        "children": [
+          "/cesium/gis/terminology/Cartesian.md"
+        ]
       }
     ]
   }

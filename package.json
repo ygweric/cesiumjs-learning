@@ -5,8 +5,8 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"WATCH=true node ./scripts/prebuild.mjs\" \"npm run syncnote\" \"npm run docs:dev\"",
-    "build": "WATCH=false node ./scripts/prebuild.mjs && npm run docs:build",
+    "dev": "concurrently \"WATCH=true node ./scripts/prebuild.mjs\"  \"npm run docs:dev\"",
+    "build": "node ./scripts/prebuild.mjs && npm run docs:build",
     "syncnote": "node ./scripts/commands/sync-files-to-json.mjs",
     "docs:dev": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",

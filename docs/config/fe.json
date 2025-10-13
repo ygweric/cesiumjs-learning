@@ -1,62 +1,80 @@
 [
   "/fe/index.md",
   {
-    "text": "模块化",
-    "children": [
-      "/fe/module/npm-vs-gitsubmodule/index.md",
-      {
-        "path": "/fe/module/import",
-        "text": "导入",
-        "children": [
-          {
-            "path": "/fe/module/import/import.meta.glob",
-            "text": "import.meta.glob",
-            "children": ["/fe/module/import/import.meta.glob/index.md"]
-          },
-          "/fe/module/import/index.md",
-          {
-            "path": "/fe/module/jsx",
-            "text": "JSX",
-            "children": [
-              "/fe/module/jsx/index.md",
-              "/fe/module/jsx/Rollup+Babel vs Gulp+TypeScript.md",
-              "/fe/module/jsx/Rollup-jsx-pragma.md"
-            ]
-          },
-          {
-            "path": "/fe/module/link",
-            "text": "/fe/module/link",
-            "children": ["/fe/module/link/index.md"]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "text": "性能优化",
-    "children": [
-      "/fe/performace/index.md",
-      {
-        "path": "/fe/performace/code-split",
-        "text": "代码分隔",
-        "children": ["/fe/performace/code-split/index.md"]
-      }
-    ]
-  },
-  {
     "path": "/fe/micro-fe",
     "text": "微前端",
     "children": [
       {
         "path": "/fe/micro-fe/qiankun",
         "text": "qiankun",
-        "children": ["/fe/micro-fe/qiankun/qiankun 实现隔离原理.md"]
+        "children": [
+          "/fe/micro-fe/qiankun/qiankun 实现隔离原理.md"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/fe/module",
+    "text": "模块化",
+    "children": [
+      {
+        "path": "/fe/module/import",
+        "text": "导入",
+        "children": [
+          "/fe/module/import/index.md",
+          {
+            "path": "/fe/module/import/import.meta.glob",
+            "text": "import.meta.glob",
+            "children": [
+              "/fe/module/import/import.meta.glob/index.md"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/fe/module/jsx",
+        "text": "JSX",
+        "children": [
+          "/fe/module/jsx/index.md",
+          "/fe/module/jsx/Rollup-jsx-pragma.md",
+          "/fe/module/jsx/Rollup+Babel vs Gulp+TypeScript.md"
+        ]
+      },
+      {
+        "path": "/fe/module/link",
+        "text": "npm link",
+        "children": [
+          "/fe/module/link/index.md"
+        ]
+      },
+      {
+        "path": "/fe/module/npm-vs-gitsubmodule",
+        "text": "npm-vs-gitsubmodule",
+        "children": [
+          "/fe/module/npm-vs-gitsubmodule/index.md"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/fe/performace",
+    "text": "性能优化",
+    "children": [
+      "/fe/performace/index.md",
+      {
+        "path": "/fe/performace/code-split",
+        "text": "代码分隔",
+        "children": [
+          "/fe/performace/code-split/index.md"
+        ]
       }
     ]
   },
   {
     "path": "/fe/ts",
     "text": "TypeScript",
-    "children": ["/fe/ts/ts的infer介绍.md"]
+    "children": [
+      "/fe/ts/ts的infer介绍.md"
+    ]
   }
 ]

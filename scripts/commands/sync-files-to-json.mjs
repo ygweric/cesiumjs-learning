@@ -7,6 +7,7 @@
 
 import path from 'path'
 import fs from 'fs'
+import syncDirectory from 'sync-directory'
 
 function extractMdPaths(data) {
   const mdPaths = []
@@ -25,25 +26,44 @@ function extractMdPaths(data) {
   return mdPaths
 }
 
-function getMarkdownFiles(dir, baseDir, usedPaths) {
-  // eslint-disable-next-line prefer-template
-  const relativepath = '/' + path.relative(baseDir, dir).replace(/\\/g, '/')
+function getMarkdownFiles(mdModulePath, baseDir) {
+  const relativePath =
+    // eslint-disable-next-line prefer-template
+    '/' + path.relative(baseDir, mdModulePath).replace(/\\/g, '/')
+
+  let title = path.basename(relativePath)
+  if (fs.existsSync(path.join(mdModulePath, '_title.txt'))) {
+    title = fs.readFileSync(path.join(mdModulePath, '_title.txt'), 'utf-8')
+  } else {
+    console.log(`!!!!!!!!! ${mdModulePath} 没有 _title.txt 文件`)
+  }
+
   const result = {
-    path: relativepath, // 将路径转换为相对于基目录的相对路径，并替换反斜杠为正斜杠
-    text: relativepath,
+    path: relativePath, // 将路径转换为相对于基目录的相对路径，并替换反斜杠为正斜杠
+    text: title,
     children: [],
   }
 
   // 读取当前目录下的所有文件和文件夹
-  const items = fs.readdirSync(dir)
+  const subPaths = fs.readdirSync(mdModulePath).sort((a, b) => {
+    // 将 index.md 排在最前面, 其余按字母排序
+    if (a === 'index.md') {
+      return -1
+    }
+    if (b === 'index.md') {
+      return 1
+    }
 
-  items.forEach((item) => {
-    const fullPath = path.join(dir, item)
+    return a.localeCompare(b)
+  })
+
+  subPaths.forEach((subPath) => {
+    const fullPath = path.join(mdModulePath, subPath)
     const stat = fs.statSync(fullPath)
-    console.log('fullPath', fullPath)
+    console.log('reading md file fullPath', fullPath)
     if (stat.isDirectory()) {
       // 如果是目录，递归获取子文件夹的 md 文件
-      const children = getMarkdownFiles(fullPath, baseDir, usedPaths)
+      const children = getMarkdownFiles(fullPath, baseDir)
       if (children.children.length > 0) {
         result.children.push(children)
       }
@@ -52,56 +72,50 @@ function getMarkdownFiles(dir, baseDir, usedPaths) {
       // eslint-disable-next-line prefer-template
       const mdPath = '/' + path.relative(baseDir, fullPath).replace(/\\/g, '/') // 转换为相对路径
 
-      if (!usedPaths.includes(mdPath)) {
-        result.children.push(mdPath)
-      }
+      result.children.push(mdPath)
     }
   })
 
   return result
 }
 
-const sourcePaths = [
-  // path.resolve('docs/cesium'),
+const mdModulePathList = [
+  path.resolve('docs/cesium'),
   path.resolve('docs/fe'),
-  // path.resolve('docs/tools'),
-  // path.resolve('docs/interview'),
+  path.resolve('docs/tools'),
+  path.resolve('docs/interview'),
 ]
 
 const baseDir = path.resolve('docs')
 
-const syncFilesToJson = (sourcePath) => {
-  const targetPath = path.resolve(
-    'docs/config',
-    `${path.basename(sourcePath)}-sync.json`,
-  )
+const syncFilesToJson = (mdModulePath) => {
   const configFilePath = path.resolve(
     'docs/config',
-    `${path.basename(sourcePath)}.json`,
+    `${path.basename(mdModulePath)}.json`,
   )
 
-  const usedPaths = extractMdPaths(
-    JSON.parse(fs.readFileSync(configFilePath, 'utf-8')),
-  )
+  // const usedPaths = extractMdPaths(
+  //   JSON.parse(fs.readFileSync(configFilePath, 'utf-8')),
+  // )
 
-  const noteConfigObject = getMarkdownFiles(
-    sourcePath,
-    baseDir,
-    usedPaths,
-  ).children
+  const noteConfigObject = getMarkdownFiles(mdModulePath, baseDir).children
 
   // console.log(JSON.stringify(noteConfigObject, null, 2))
 
-  fs.writeFileSync(targetPath, JSON.stringify(noteConfigObject, null, 2))
+  fs.writeFileSync(configFilePath, JSON.stringify(noteConfigObject, null, 2))
 }
 
-sourcePaths.forEach((sourcePath) => {
-  syncFilesToJson(sourcePath)
+export const syncFilesDirectory = (watch = true) => {
+  mdModulePathList.forEach((mdModulePath) => {
+    syncFilesToJson(mdModulePath)
 
-  fs.watch(sourcePath, { recursive: true }, (eventType, filename) => {
-    // could be either 'rename' or 'change'. new file event and delete
-    // also generally emit 'rename'
-    console.log(`eventType: ${eventType}, filename: ${filename}`)
-    syncFilesToJson(sourcePath)
+    if (watch) {
+      fs.watch(mdModulePath, { recursive: true }, (eventType, filename) => {
+        // could be either 'rename' or 'change'. new file event and delete
+        // also generally emit 'rename'
+        console.log(`eventType: ${eventType}, filename: ${filename}`)
+        syncFilesToJson(mdModulePath)
+      })
+    }
   })
-})
+}

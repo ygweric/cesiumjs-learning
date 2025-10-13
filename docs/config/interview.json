@@ -5,64 +5,6 @@
     "text": "算法",
     "children": [
       {
-        "path": "/interview/algorithm/hash",
-        "text": "hash哈希",
-        "children": ["/interview/algorithm/hash/lc-1-简-两数之和.md"]
-      },
-      {
-        "path": "/interview/algorithm/top-k",
-        "text": "top K",
-        "children": [
-          "/interview/algorithm/top-k/lc-215-数组中的第K个最大元素.md",
-          "/interview/algorithm/top-k/lc-347-中-前 K 个高频元素.md",
-          "/interview/algorithm/top-k/lc-LCR159-简-库存管理 III.md"
-        ]
-      },
-      {
-        "path": "/interview/algorithm/二叉树",
-        "text": "二叉树",
-        "children": [
-          "/interview/algorithm/二叉树/lc-101-简-对称二叉树.md",
-          "/interview/algorithm/二叉树/lc-102-中-二叉树的层序遍历.md",
-          "/interview/algorithm/二叉树/lc-104-简-二叉树的最大深度.md",
-          "/interview/algorithm/二叉树/lc-105-中-从前序与中序遍历序列构造二叉树.md",
-          "/interview/algorithm/二叉树/lc-114-中-二叉树展开为链表.md",
-          "/interview/algorithm/二叉树/lc-226-简-翻转二叉树.md",
-          "/interview/algorithm/二叉树/lc-236-中-二叉树的最近公共祖先.md"
-        ]
-      },
-      {
-        "path": "/interview/algorithm/动态规划",
-        "text": "动态规划",
-        "children": [
-          "/interview/algorithm/动态规划/lc-1277-中-统计全为 1 的正方形子矩阵.md",
-          "/interview/algorithm/动态规划/lc-221-中-最大正方形.md",
-          "/interview/algorithm/动态规划/lc-62-中-不同路径.md",
-          "/interview/algorithm/动态规划/lc-70-简-爬楼梯.md",
-          "/interview/algorithm/动态规划/lc-72-中-编辑距离.md",
-          "/interview/algorithm/动态规划/lc-746-简-使用最小花费爬楼梯.md",
-          "/interview/algorithm/动态规划/背包-01背包.md",
-          "/interview/algorithm/动态规划/背包-完全背包.md"
-        ]
-      },
-      {
-        "path": "/interview/algorithm/原地哈希",
-        "text": "原地哈希",
-        "children": [
-          "/interview/algorithm/原地哈希/lc-33-中-搜索旋转排序数组.md",
-          "/interview/algorithm/原地哈希/lc-442-中-数组中重复的数据.md",
-          "/interview/algorithm/原地哈希/lc-448-简-找到所有数组中消失的数字.md"
-        ]
-      },
-      {
-        "path": "/interview/algorithm/图",
-        "text": "图",
-        "children": [
-          "/interview/algorithm/图/lc-207-中-课程表.md",
-          "/interview/algorithm/图/lc-997-简-找到小镇的法官.md"
-        ]
-      },
-      {
         "path": "/interview/algorithm/待分类",
         "text": "待分类",
         "children": [
@@ -94,32 +36,6 @@
         ]
       },
       {
-        "path": "/interview/algorithm/排序",
-        "text": "排序",
-        "children": [
-          {
-            "path": "/interview/algorithm/排序/归并排序",
-            "text": "归并排序",
-            "children": ["/interview/algorithm/排序/归并排序/归并排序.md"]
-          },
-          "/interview/algorithm/排序/快排.md",
-          {
-            "path": "/interview/algorithm/排序/排序+双指针",
-            "text": "排序+双指针",
-            "children": [
-              "/interview/algorithm/排序/排序+双指针/lc- 524-中-通过删除字母匹配到字典里最长单词.md",
-              "/interview/algorithm/排序/排序+双指针/lc-15-中-三数之和.md",
-              "/interview/algorithm/排序/排序+双指针/lc-16-中-最接近的三数之和.md",
-              "/interview/algorithm/排序/排序+双指针/lc-283-简-移动零.md",
-              "/interview/algorithm/排序/排序+双指针/lc-3-中-无重复字符的最长子串.md",
-              "/interview/algorithm/排序/排序+双指针/lc-75-中-颜色分类.md"
-            ]
-          },
-          "/interview/algorithm/排序/计数排序.md"
-        ]
-      },
-      "/interview/algorithm/算法工具库.md",
-      {
         "path": "/interview/algorithm/递归+回溯",
         "text": "递归+回溯",
         "children": [
@@ -127,6 +43,33 @@
           "/interview/algorithm/递归+回溯/lc-77-中-组合.md",
           "/interview/algorithm/递归+回溯/LCR-083-中-全排列-不重复.md",
           "/interview/algorithm/递归+回溯/LCR-084-中-全排列-重复.md"
+        ]
+      },
+      {
+        "path": "/interview/algorithm/动态规划",
+        "text": "动态规划",
+        "children": [
+          "/interview/algorithm/动态规划/背包-01背包.md",
+          "/interview/algorithm/动态规划/背包-完全背包.md",
+          "/interview/algorithm/动态规划/lc-1277-中-统计全为 1 的正方形子矩阵.md",
+          "/interview/algorithm/动态规划/lc-221-中-最大正方形.md",
+          "/interview/algorithm/动态规划/lc-62-中-不同路径.md",
+          "/interview/algorithm/动态规划/lc-70-简-爬楼梯.md",
+          "/interview/algorithm/动态规划/lc-72-中-编辑距离.md",
+          "/interview/algorithm/动态规划/lc-746-简-使用最小花费爬楼梯.md"
+        ]
+      },
+      {
+        "path": "/interview/algorithm/二叉树",
+        "text": "二叉树",
+        "children": [
+          "/interview/algorithm/二叉树/lc-101-简-对称二叉树.md",
+          "/interview/algorithm/二叉树/lc-102-中-二叉树的层序遍历.md",
+          "/interview/algorithm/二叉树/lc-104-简-二叉树的最大深度.md",
+          "/interview/algorithm/二叉树/lc-105-中-从前序与中序遍历序列构造二叉树.md",
+          "/interview/algorithm/二叉树/lc-114-中-二叉树展开为链表.md",
+          "/interview/algorithm/二叉树/lc-226-简-翻转二叉树.md",
+          "/interview/algorithm/二叉树/lc-236-中-二叉树的最近公共祖先.md"
         ]
       },
       {
@@ -139,41 +82,101 @@
           "/interview/algorithm/链表/lc-19-中-删除链表的倒数第 N 个结点.md",
           "/interview/algorithm/链表/lc-287-中-寻找重复数.md"
         ]
+      },
+      {
+        "path": "/interview/algorithm/排序",
+        "text": "排序",
+        "children": [
+          {
+            "path": "/interview/algorithm/排序/归并排序",
+            "text": "归并排序",
+            "children": [
+              "/interview/algorithm/排序/归并排序/归并排序.md"
+            ]
+          },
+          "/interview/algorithm/排序/计数排序.md",
+          "/interview/algorithm/排序/快排.md",
+          {
+            "path": "/interview/algorithm/排序/排序+双指针",
+            "text": "排序+双指针",
+            "children": [
+              "/interview/algorithm/排序/排序+双指针/lc- 524-中-通过删除字母匹配到字典里最长单词.md",
+              "/interview/algorithm/排序/排序+双指针/lc-15-中-三数之和.md",
+              "/interview/algorithm/排序/排序+双指针/lc-16-中-最接近的三数之和.md",
+              "/interview/algorithm/排序/排序+双指针/lc-283-简-移动零.md",
+              "/interview/algorithm/排序/排序+双指针/lc-3-中-无重复字符的最长子串.md",
+              "/interview/algorithm/排序/排序+双指针/lc-75-中-颜色分类.md"
+            ]
+          }
+        ]
+      },
+      "/interview/algorithm/算法工具库.md",
+      {
+        "path": "/interview/algorithm/图",
+        "text": "图",
+        "children": [
+          "/interview/algorithm/图/lc-207-中-课程表.md",
+          "/interview/algorithm/图/lc-997-简-找到小镇的法官.md"
+        ]
+      },
+      {
+        "path": "/interview/algorithm/原地哈希",
+        "text": "原地哈希",
+        "children": [
+          "/interview/algorithm/原地哈希/lc-33-中-搜索旋转排序数组.md",
+          "/interview/algorithm/原地哈希/lc-442-中-数组中重复的数据.md",
+          "/interview/algorithm/原地哈希/lc-448-简-找到所有数组中消失的数字.md"
+        ]
+      },
+      {
+        "path": "/interview/algorithm/hash",
+        "text": "hash哈希",
+        "children": [
+          "/interview/algorithm/hash/lc-1-简-两数之和.md"
+        ]
+      },
+      {
+        "path": "/interview/algorithm/top-k",
+        "text": "top K",
+        "children": [
+          "/interview/algorithm/top-k/lc-215-数组中的第K个最大元素.md",
+          "/interview/algorithm/top-k/lc-347-中-前 K 个高频元素.md",
+          "/interview/algorithm/top-k/lc-LCR159-简-库存管理 III.md"
+        ]
       }
     ]
   },
-
   {
     "path": "/interview/code",
     "text": "手撕代码",
     "children": [
-      "/interview/code/curring.md",
-      "/interview/code/h5-evnet详解.md",
-      "/interview/code/promiseify化.md",
-      "/interview/code/script标签详解.md",
-      "/interview/code/vue-SSR服务端渲染.md",
-      "/interview/code/vue双向绑定.md",
-      "/interview/code/vue核心原理全解.md.md",
-      "/interview/code/前端路由实现原理.md",
-      "/interview/code/原型链.md",
+      "/interview/code/闭包.md",
       "/interview/code/变量提升.md",
-      "/interview/code/宏任务_微任务.md",
-      "/interview/code/左右布局.md",
-      "/interview/code/异步.md",
-      "/interview/code/微前端.md",
-      "/interview/code/手写filter函数.md",
-      "/interview/code/手写promise.md",
       "/interview/code/捕获冒泡.md",
-      "/interview/code/new本质.md",
-      "/interview/code/Object.xxx.md",
-      "/interview/code/this.md",
       "/interview/code/反射Reflect,、代理Proxy.md",
+      "/interview/code/防抖-节流.md",
+      "/interview/code/宏任务_微任务.md",
       "/interview/code/基础类型.md",
-      "/interview/code/深拷贝-浅拷贝.md",
       "/interview/code/继承.md",
       "/interview/code/跨域.md",
-      "/interview/code/闭包.md",
-      "/interview/code/防抖-节流.md"
+      "/interview/code/前端路由实现原理.md",
+      "/interview/code/深拷贝-浅拷贝.md",
+      "/interview/code/手写filter函数.md",
+      "/interview/code/手写promise.md",
+      "/interview/code/微前端.md",
+      "/interview/code/异步.md",
+      "/interview/code/原型链.md",
+      "/interview/code/左右布局.md",
+      "/interview/code/curring.md",
+      "/interview/code/h5-evnet详解.md",
+      "/interview/code/new本质.md",
+      "/interview/code/Object.xxx.md",
+      "/interview/code/promiseify化.md",
+      "/interview/code/script标签详解.md",
+      "/interview/code/this.md",
+      "/interview/code/vue-SSR服务端渲染.md",
+      "/interview/code/vue核心原理全解.md.md",
+      "/interview/code/vue双向绑定.md"
     ]
   }
 ]
