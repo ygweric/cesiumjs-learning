@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "ts的infer介绍"
             }
+          },
+          {
+            "id": "9da16b9653707efe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fe/ts/ts的工具类型（Utility Types）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ts的工具类型（Utility Types）"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fe/ts/ts的infer介绍.md",
+                "file": "fe/ts/ts的工具类型（Utility Types）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ts的infer介绍"
+              "title": "Outline of ts的工具类型（Utility Types）"
             }
           }
         ],
@@ -168,14 +183,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b56e507f6990002e",
+  "active": "9da16b9653707efe",
   "lastOpenFiles": [
+    "fe/ts/ts的infer介绍.md",
+    "fe/ts/ts的工具类型（Utility Types）.md",
     "fe/module/jsx/Rollup-jsx-pragma.md",
     "fe/module/jsx/Rollup+Babel vs Gulp+TypeScript.md",
     "fe/module/jsx/index.md",
     "fe/micro-fe/qiankun/qiankun 实现隔离原理.md",
     "fe/module/jsx",
-    "fe/ts/ts的infer介绍.md",
     "fe/ts",
     "advanced/cookbook/markdown-and-vue-sfc.md",
     "fe/micro-fe/qiankun",
@@ -204,7 +220,6 @@
     "interview/code/Pasted image 20241120165736.png",
     "interview/code/Pasted image 20241120165725.png",
     "interview/code/继承.md",
-    "interview/code/this.md",
     "interview/code/Pasted image 20241120154327.png",
     "interview/code/Pasted image 20241120154459.png",
     "interview/theory/Pasted image 20241120154459.png",
