@@ -1,0 +1,7 @@
+[
+  { "text": "主站博客", "link": "https://guowei.fun" },
+  { "text": "面试", "link": "/interview/" },
+  { "text": "前端", "link": "/fe/" },
+  { "text": "开发工具", "link": "/tools/" },
+  { "text": "Cesium", "link": "/cesium/" }
+]

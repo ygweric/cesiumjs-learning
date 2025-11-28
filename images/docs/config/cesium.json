@@ -1,0 +1,71 @@
+[
+  "/cesium/index.md",
+  {
+    "path": "/cesium/advanced",
+    "text": "advanced",
+    "children": [
+      "/cesium/advanced/readme.md"
+    ]
+  },
+  {
+    "path": "/cesium/basic",
+    "text": "basic",
+    "children": [
+      "/cesium/basic/what.md"
+    ]
+  },
+  {
+    "path": "/cesium/case",
+    "text": "case",
+    "children": [
+      "/cesium/case/init.md"
+    ]
+  },
+  {
+    "path": "/cesium/gis",
+    "text": "Gis",
+    "children": [
+      {
+        "path": "/cesium/gis/date-format",
+        "text": "date-format",
+        "children": [
+          "/cesium/gis/date-format/Julian-Day.md"
+        ]
+      },
+      {
+        "path": "/cesium/gis/file-format",
+        "text": "file-format",
+        "children": [
+          {
+            "path": "/cesium/gis/file-format/geojson",
+            "text": "geojson",
+            "children": [
+              "/cesium/gis/file-format/geojson/index.md"
+            ]
+          },
+          {
+            "path": "/cesium/gis/file-format/summary",
+            "text": "summary",
+            "children": [
+              "/cesium/gis/file-format/summary/index.md"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/cesium/gis/service",
+        "text": "service",
+        "children": [
+          "/cesium/gis/service/index.md"
+        ]
+      },
+      {
+        "path": "/cesium/gis/terminology",
+        "text": "terminology",
+        "children": [
+          "/cesium/gis/terminology/Cartesian.md"
+        ]
+      }
+    ]
+  }
+]

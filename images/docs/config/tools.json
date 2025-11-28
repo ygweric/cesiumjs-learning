@@ -1,0 +1,62 @@
+[
+  "/tools/index.md",
+  {
+    "path": "/tools/git",
+    "text": "Git",
+    "children": [
+      {
+        "path": "/tools/git/config",
+        "text": "config",
+        "children": [
+          "/tools/git/config/index.md"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/tools/js",
+    "text": "js相关",
+    "children": [
+      {
+        "path": "/tools/js/chrome",
+        "text": "chrome浏览器",
+        "children": [
+          {
+            "path": "/tools/js/chrome/load-js",
+            "text": "load-js",
+            "children": [
+              "/tools/js/chrome/load-js/index.md"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/tools/js/nextjs",
+        "text": "Next.JS",
+        "children": [
+          "/tools/js/nextjs/vscode中debug调试nextjs配置.md"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/tools/npm",
+    "text": "npm",
+    "children": [
+      {
+        "path": "/tools/npm/command",
+        "text": "command",
+        "children": [
+          "/tools/npm/command/index.md"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/tools/vi",
+    "text": "VI",
+    "children": [
+      "/tools/vi/index.md"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+import{_ as s,o as n,c as e,e as a}from"./app-poSTjqa8.js";const l={},i=a(`<h1 id="lc-160-简-相交链表" tabindex="-1"><a class="header-anchor" href="#lc-160-简-相交链表"><span>lc-160-简-相交链表</span></a></h1><div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="background-color:#1E1E1E;color:#D4D4D4;"><pre class="shiki dark-plus vp-code"><code><span class="line"><span style="color:#6A9955;">/*</span></span>
+<span class="line"><span style="color:#6A9955;">https://leetcode.cn/problems/intersection-of-two-linked-lists/description/</span></span>
+<span class="line"><span style="color:#6A9955;">给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;">图示两个链表在节点 c1 开始相交：</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;">题目数据 保证 整个链式结构中不存在环。</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;">*/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A9955;">/*</span></span>
+<span class="line"><span style="color:#6A9955;">hash好做，没难度</span></span>
+<span class="line"><span style="color:#6A9955;">双指针很精妙，但很难想到</span></span>
+<span class="line"><span style="color:#6A9955;">*/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#569CD6;">var</span><span style="color:#DCDCAA;"> getIntersectionNode</span><span style="color:#D4D4D4;"> = </span><span style="color:#569CD6;">function</span><span style="color:#D4D4D4;">(</span><span style="color:#9CDCFE;">headA</span><span style="color:#D4D4D4;">, </span><span style="color:#9CDCFE;">headB</span><span style="color:#D4D4D4;">) {</span></span>
+<span class="line"><span style="color:#6A9955;">  //todo  </span></span>
+<span class="line"><span style="color:#D4D4D4;">};</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),t=[i];function c(p,o){return n(),e("div",null,t)}const d=s(l,[["render",c],["__file","lc-160-简-相交链表.html.vue"]]),m=JSON.parse('{"path":"/interview/algorithm/%E9%93%BE%E8%A1%A8/lc-160-%E7%AE%80-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html","title":"lc-160-简-相交链表","lang":"zh-CN","frontmatter":{"description":"lc-160-简-相交链表","head":[["meta",{"property":"og:url","content":"https://cesium.guowei.fun/interview/algorithm/%E9%93%BE%E8%A1%A8/lc-160-%E7%AE%80-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html"}],["meta",{"property":"og:site_name","content":"学习笔记"}],["meta",{"property":"og:title","content":"lc-160-简-相交链表"}],["meta",{"property":"og:description","content":"lc-160-简-相交链表"}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"zh-CN"}],["meta",{"property":"og:updated_time","content":"2024-11-20T08:12:25.000Z"}],["meta",{"property":"article:modified_time","content":"2024-11-20T08:12:25.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"lc-160-简-相交链表\\",\\"image\\":[\\"\\"],\\"dateModified\\":\\"2024-11-20T08:12:25.000Z\\",\\"author\\":[]}"]]},"headers":[],"git":{"updatedTime":1732090345000,"contributors":[{"name":"国wei","email":"ygweric@gmail.com","commits":1}]},"autoDesc":true,"filePathRelative":"interview/algorithm/链表/lc-160-简-相交链表.md"}');export{d as comp,m as data};
